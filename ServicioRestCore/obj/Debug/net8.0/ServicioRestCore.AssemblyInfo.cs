@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ServicioRestCore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ded4de0a9132b53e6209cf836fa408931759c2df")]
 [assembly: System.Reflection.AssemblyProductAttribute("ServicioRestCore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ServicioRestCore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

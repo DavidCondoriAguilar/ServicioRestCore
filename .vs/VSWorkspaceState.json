@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\ServicioRestCore",
+    "\\ServicioRestCore\\Controllers",
     "\\ServicioRestCore\\Models"
   ],
-  "SelectedNode": "\\ServicioRestCore\\appsettings.json",
+  "SelectedNode": "\\ServicioRestCore\\AplicationDBContext.cs",
   "PreviewInSolutionExplorer": false
 }

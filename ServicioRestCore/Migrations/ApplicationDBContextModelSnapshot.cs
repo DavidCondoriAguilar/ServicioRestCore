@@ -34,12 +34,12 @@ namespace ServicioRestCore.Migrations
 
                     b.Property<string>("nomcat")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasMaxLength(60)
+                        .HasColumnType("nvarchar(60)");
 
                     b.HasKey("codcat");
 
-                    b.ToTable("Categorias");
+                    b.ToTable("categoria");
                 });
 
             modelBuilder.Entity("ServicioRestCore.Models.Producto", b =>
@@ -50,24 +50,22 @@ namespace ServicioRestCore.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("codpro"));
 
-                    b.Property<double>("canpro")
-                        .HasColumnType("float");
+                    b.Property<decimal>("canpro")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<int>("codcat")
                         .HasColumnType("int");
 
                     b.Property<string>("despro")
                         .IsRequired()
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("estpro")
                         .HasColumnType("bit");
 
                     b.Property<string>("nompro")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("prepro")
                         .HasColumnType("decimal(18,2)");
@@ -76,7 +74,7 @@ namespace ServicioRestCore.Migrations
 
                     b.HasIndex("codcat");
 
-                    b.ToTable("Productos");
+                    b.ToTable("producto");
                 });
 
             modelBuilder.Entity("ServicioRestCore.Models.Producto", b =>
